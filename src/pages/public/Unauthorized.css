@@ -1,0 +1,82 @@
+.unauthorized {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.unauthorized-content {
+  max-width: 500px;
+}
+
+.unauthorized-icon {
+  font-size: 6rem;
+  color: #ffc107;
+  margin-bottom: 1.5rem;
+}
+
+.unauthorized h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  color: #1a365d;
+}
+
+.unauthorized h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.5rem 0 1.5rem;
+  color: #333;
+}
+
+.unauthorized p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.unauthorized-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.unauthorized-buttons .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #1a73e8;
+  border: 1px solid #1a73e8;
+}
+
+.btn-outline:hover {
+  background-color: #1a73e8;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .unauthorized h1 {
+    font-size: 5rem;
+  }
+  
+  .unauthorized h2 {
+    font-size: 1.5rem;
+  }
+  
+  .unauthorized p {
+    font-size: 1rem;
+  }
+  
+  .unauthorized-icon {
+    font-size: 4rem;
+  }
+} 

@@ -1,0 +1,48 @@
+/* Currency icon styling */
+.rupee-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+  font-size: 1.1em;
+  position: relative;
+  top: -1px;
+}
+
+/* For property price display */
+.property-price .rupee-icon {
+  font-size: 1.2em;
+  color: #2563eb; /* Blue color for emphasis */
+  margin-right: 4px;
+}
+
+/* For table cells with currency */
+td .rupee-icon {
+  font-size: 1em;
+  color: #4b5563; /* Gray color for tables */
+  margin-right: 3px;
+}
+
+/* For card headers with currency */
+.card-title .rupee-icon {
+  font-size: 1.5em;
+  color: #2563eb;
+  margin-right: 8px;
+}
+
+/* For input fields with currency icon */
+.input-with-icon .rupee-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280; /* Medium gray */
+  font-size: 1.1em;
+}
+
+/* Ensure consistent alignment in all contexts */
+.rupee-icon {
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+} 

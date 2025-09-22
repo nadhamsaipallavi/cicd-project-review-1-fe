@@ -1,0 +1,260 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem 1rem;
+}
+
+.auth-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  overflow: hidden;
+}
+
+.auth-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.auth-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.auth-header p {
+  color: #666;
+  margin: 0;
+}
+
+.auth-form {
+  padding: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group.half {
+  flex: 1;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  border-color: #1a73e8;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+.form-text {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Password input styling */
+.password-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input .form-control {
+  padding-right: 2.5rem;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-toggle:hover {
+  color: #1a73e8;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #1557b0;
+}
+
+.btn-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.auth-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.auth-footer p {
+  margin-bottom: 0.5rem;
+}
+
+.auth-footer a {
+  font-weight: 500;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+.alert {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.test-accounts {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eaeaea;
+}
+
+.test-accounts p {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.test-accounts ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.test-accounts li {
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #666;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.auth-divider span {
+  padding: 0 10px;
+}
+
+/* Role selection styling */
+.role-options {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.role-option {
+  flex: 1;
+  border: 1px solid #eaeaea;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.role-option:hover {
+  border-color: #1a73e8;
+}
+
+.role-option input[type="radio"] {
+  display: none;
+}
+
+.role-option input[type="radio"]:checked + label {
+  color: #1a73e8;
+  font-weight: 600;
+}
+
+.role-option input[type="radio"]:checked + label svg {
+  color: #1a73e8;
+}
+
+.role-option label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.role-option label svg {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.role-option input[type="radio"]:checked ~ .role-option {
+  border-color: #1a73e8;
+  background-color: rgba(26, 115, 232, 0.05);
+} 
