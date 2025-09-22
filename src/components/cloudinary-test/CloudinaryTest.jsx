@@ -13,7 +13,7 @@ const CloudinaryTest = () => {
     setError(null);
 
     try {
-      const response = await axios.get('http://localhost:8080/api/images/cloudinary-test');
+      const response = await axios.get('http://localhost:8085/api/images/cloudinary-test');
       setResult(response.data);
       console.log('Cloudinary test response:', response.data);
     } catch (err) {

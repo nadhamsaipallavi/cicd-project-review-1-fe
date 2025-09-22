@@ -1,7 +1,7 @@
 import { axiosInstance } from './authService';
 import authHeader from './authHeader';
 
-const API_URL = 'http://localhost:8080/api';
+const API_URL = 'http://localhost:8085/api';
 
 // Response interceptor to handle errors (additional to the ones in authService)
 axiosInstance.interceptors.response.use(
